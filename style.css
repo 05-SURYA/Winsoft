@@ -1,84 +1,68 @@
 *{
 	box-sizing: border-box;
+	margin: 0px;
+	
 }
-body{
-	font-family: monospace;
-	font-size: 16px;
-}
-h1{
+	body{
+		font-family: monospace;
+	    font-size: 16px;
+	    background-color: lavender;
+	}
+
+h1{color: firebrick;
 	text-align: center;
 	font-size: 175%;
 }
-h4{
-	font-size: 125%;
-}
-div.box{
-	margin: 2%;
-	background-color: grey;
-	border: 1px solid black;
-	padding: 10px;
-	float: left;
-	width: 28%;
-	height: auto;
+.box{
+	background-color: navy;
 	position: relative;
-	left: 30px;
-	top: 10px;
+	left:2%;
+	float: left;
+	border: 1px solid black;
 }
-#pink h4{
-	
- position: absolute;
- right: -1px;
- top: -1px;
- margin: 0px;
- width: 30%;
- background-color: pink;
- text-align: center;
- border: 1px solid black;
- padding: 2px;
-}
-p{
+p{  color: gold;
 	margin-top: 20px;
+	padding: 10px;
 }
-
-
-#red h4{	
- position: absolute;
- right: -1px;
- top: -1px;
- margin: 0px;
- width: 30%;
- background-color: darkred;
- color: white;
- text-align: center;
- border: 1px solid black;
- padding: 2px;
+h4{
+	position: absolute;
+	font-size: 125%;
+	background-color: yellow;
+	border: 1px solid gold;
+	right: -1px;
+	top: -1px;
+	width: 25%;
+	text-align: center;
 }
-
-#yellow h4{	
- position: absolute;
- right: -1px;
- top: -1px;
- margin: 0px;
- width: 30%;
- background-color: yellow;
- text-align: center;
- border: 1px solid black;
- padding: 2px;
+h4#green{
+	background-color: darkgreen;
+	color: white;
 }
-
-@media (min-width: 768px) and (max-width: 991px)
-{
- #chicken,#beef{
- 	width: 43%;
- }
- #sushi{
- 	width: 90%;
- }
+h4#pink{
+	background-color: red;
+	color: white;
 }
-@media (max-width: 767px)
-{
-	#chicken,#beef,#sushi{
-		width: 90%;
+@media(min-width:992px){
+	.col-lg-4{
+		width: 30%;
+		margin: 1%;
+		height: auto;
+
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		width: 46%;
+		margin: 1%;}
+
+	.col-md-6:nth-child(3){
+		width: 94%;
+	}		
+}
+@media(max-width: 767px){
+	.col-sm-12{
+		width: 94%;
+		margin: 1%;
 	}
 }
 
