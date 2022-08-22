@@ -22,7 +22,8 @@
               <a href="#onlineTrainig">Online Training</a>
               <a href="#contact">Contact Us</a>
               <a href="#about">About</a>
-            
+              <p></p>
+              <button onclick="showNav(this)"> ≡ </button>
         </nav>
         <div class="search-box">
             <input type="text" name="search" id="search" placeholder="search" />
@@ -39,22 +40,22 @@
           <p>Winsofts is a strategic divisions of RKG group founded in 2000 having vast range of IT services spanning Consultancy,Sales and support, Broadcast Multimedia, Networking Solutions, Product Development, Staff Augmentation and IT Education</p>
           <button>Enroll Now</button>
         </div>
-        <div class="enquiry-box">
+        <form class="enquiry-box">
             <h3>Enquiry</h3>
             <input type="text" placeholder="Enter Your Name">
             <input type="email" placeholder="Enter Your email">
             <input type="tel" placeholder="Enter your Mobile No">
-            <select>
-                <option>Select Course</option>
-                <option>Tally Course</option>
-                <option>Ms Office</option>
-                <option>Programming Languages</option>
-                <option>Adobe Courses</option>
+            <select id="quotes">
+                <option value="0">Select Course</option>
+                <option value="tally">Tally Course</option>
+                <option value="msOffice">Ms Office</option>
+                <option value="progLang">Programming Languages</option>
+                <option value="adobe">Adobe Courses</option>
             </select>
-            <button>Get Quotes</button>
-        </div>
+            <button onclick="getQuotes();">Get Quotes</button>
+        </form>
     </section>
-    <section class="courses">
+    <section class="courses" id="courses">
         <h3 class="course-head">Courses</h3>
             <div class="course-box box1" onmouseover="cardDisplay(this);" onmouseout="reDo(this)">
                 <h3>Tally Course</h3>
@@ -98,12 +99,12 @@
 
     </section>
     <section class="about">
-        <div class="contact">
+        <div class="contact" id="about">
             <h3>Contact us now</h3>
             <p>Winsofts institute.<br> No 165, East Car Street,<br> Dhanvandri Buillding.2nd floor. <br>Chidambaram HO. Chidambaram 608001. India</p>
             <i class="fa-solid fa-phone"></i><span>+91 7947259096</span>
         </div>
-        <div class="social">
+        <div class="social" id="contact">
             <h3>Follow us</h3>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -116,7 +117,7 @@
         <span>&copy;developed by <a href="https://www.linkedin.com/in/surya05/" target="_blank">surya_05</a></span>
     </footer>
     <aside>
-        <div class="chat-icon" ><img src="img/chat.png" width="50" height="50"  onclick="displayChat(this);">
+        <div class="chat-icon"><img src="img/chat.png" width="50" height="50"  onclick="displayChat(this);">
         <div class="chat-box">
             <input class="bot" type="text" value=" Hi.." readonly>
             <input class="user" type="text" placeholder=" Type a message...">
