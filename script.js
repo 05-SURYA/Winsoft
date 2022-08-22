@@ -77,7 +77,10 @@ function getQuotes(){
             child.appendChild(newDoc);
             setTimeout(()=>{
                 child.removeChild(child.childNodes[13]);
-            },5000);
+            },8000);
         }
-    }
+    } 
 }
+
+
+
