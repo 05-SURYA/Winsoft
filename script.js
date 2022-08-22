@@ -15,7 +15,7 @@ function reDo(element){
 }
 
 function displayChat(ele){
-    let element = ele.parentNode;
+    let element=ele.parentNode;
     let child = element.childNodes;
     let disp = window.getComputedStyle(child[2]).display;
     console.log(disp);
