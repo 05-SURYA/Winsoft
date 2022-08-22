@@ -1,0 +1,130 @@
+<!doctype html>
+
+<head>
+    <title>Winsoft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Winsoft</h1>
+        </div>
+        <nav>
+              <a href="#">Home</a>
+              <a href="#courses">Courses</a>
+              <a href="#onlineTrainig">Online Training</a>
+              <a href="#contact">Contact Us</a>
+              <a href="#about">About</a>
+            
+        </nav>
+        <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="search" />
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+    <marquee>A choice that makes big difference in your career. Winsoft is commited to helping its student to reach their goals</marquee>
+    </header>
+    <div class="banner">
+        <img src="img/Banner.jpg" alt="banner" width="100%" height="100%">
+    </div>
+    <section class="intro">
+        <div class="info">
+            <h3>Introduction about Winsoft</h3>
+          <p>Winsofts is a strategic divisions of RKG group founded in 2000 having vast range of IT services spanning Consultancy,Sales and support, Broadcast Multimedia, Networking Solutions, Product Development, Staff Augmentation and IT Education</p>
+          <button>Enroll Now</button>
+        </div>
+        <div class="enquiry-box">
+            <h3>Enquiry</h3>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your email">
+            <input type="tel" placeholder="Enter your Mobile No">
+            <select>
+                <option>Select Course</option>
+                <option>Tally Course</option>
+                <option>Ms Office</option>
+                <option>Programming Languages</option>
+                <option>Adobe Courses</option>
+            </select>
+            <button>Get Quotes</button>
+        </div>
+    </section>
+    <section class="courses">
+        <h3 class="course-head">Courses</h3>
+            <div class="course-box box1" onmouseover="cardDisplay(this);" onmouseout="reDo(this)">
+                <h3>Tally Course</h3>
+                <p>All Tally company courses.
+                (only authorized Tally training institute in cuddalore district)</p>
+            </div>
+            <div class="course-box box2" onmouseover="cardDisplay(this);" onmouseout="reDo(this)">
+                <h3>MS Office</h3>
+                <p>All Microsoft Offices courses</p>
+            </div>
+            <div class="course-box box3" onmouseover="cardDisplay(this);" onmouseout="reDo(this)">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>C C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="course-box box4" onmouseover="cardDisplay(this);" onmouseout="reDo(this)">
+                <h3>Adobe Courses</h3>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Indesign</li>
+                    <li>Corel Draw</li>
+                </ul>
+            </div>
+    </section>
+    <section class="mission">
+        <div class="vid">
+            <video width="100%" height="auto" autoplay loop>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="miss-text">
+            <h3>Our Mission</h3>
+            <p>To impart practical knowledge to our students through Tally in a
+                 real time computerized accounting by applying their oriental knowledge,
+                 thus every students become a Tally Professional. To synergise our strength and grow together.</p>
+        </div>
+
+    </section>
+    <section class="about">
+        <div class="contact">
+            <h3>Contact us now</h3>
+            <p>Winsofts institute.<br> No 165, East Car Street,<br> Dhanvandri Buillding.2nd floor. <br>Chidambaram HO. Chidambaram 608001. India</p>
+            <i class="fa-solid fa-phone"></i><span>+91 7947259096</span>
+        </div>
+        <div class="social">
+            <h3>Follow us</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.linkedin.com/company/winsofts/about/"><i class="fa-brands fa-linkedin"></i></a>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://www.youtube.com/channel/UC8-oFot3Cdv5BIiI0zf9QbQ/featured"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </section>
+    <footer>
+        <span>&copy;developed by <a href="https://www.linkedin.com/in/surya05/" target="_blank">surya_05</a></span>
+    </footer>
+    <aside>
+        <div class="chat-icon"  onclick="displayChat(this);"><img src="img/chat.png" width="50" height="50">
+        <div class="chat-box">
+            <input class="bot" type="text" value=" Hi.." readonly>
+            <input class="user" type="text" placeholder=" Type a message...">
+            <i class="fa-solid fa-user person"></i>
+                <i class="fa-solid fa-paperclip attach"></i>
+                <i class="fa-solid fa-paper-plane send"></i>
+            </div>
+        </div>
+    </aside>
+    
+</body>
