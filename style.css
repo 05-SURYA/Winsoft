@@ -122,12 +122,13 @@ marquee{
     /* column-gap:10px */
 }
 .info h3{
-    margin:20px 0 20px 50px;
+    margin:20px 20px 20px 50px;
     font-size:2.5rem;
+    width:90%;
 }
 .intro p{
     font-family:sans-serif;
-    font-size:1.5rem;
+    font-size:1.2rem;
     font-weight:400;
     margin:40px 50px 30px 50px;
     color: rgb(14, 14, 124);
@@ -270,18 +271,20 @@ video{
 .miss-text{
     background-color:rgb(14, 14, 124);
     color:white;
-    font-family:sans-serif;
     padding:30px;
 }
 .miss-text h3{
     font-weight:100;
     font-size:2rem;
+    font-family:serif;
 }
 .miss-text p{
     padding:20px;
-    font-size:1.2rem;
     line-height:150%;
     text-align:justify;
+    font-family:sans-serif;
+    font-size:1.2rem;
+    font-weight:400;
 }
 
 /* about */
@@ -411,8 +414,9 @@ footer a{
     .search-box{
         display:none;
     }
-    .courses{
+    .courses,.course-head{
         display:block;
+        width:100%;
     }
     .course-box,.course-box h3{
         border-radius:0px;
@@ -421,12 +425,12 @@ footer a{
     .course-box{
         width:45%;
         display:inline-block;
-        margin:2%;
+        margin:2.2%;
     }
     
     .info h3,.courses>h3{
         font-size:200%;
-        width:100%;
+        width:80%;
         text-align:left;
         margin-left:30px;
     }
@@ -436,13 +440,14 @@ footer a{
     .miss-text{
         display:block;
         width:200%;
+        font-size:16px;
     }
     .intro,.about{
         display:block;
     }
     .info p{
         width:95%;
-        font-size:16px;
+        font-size:20px;
         margin:10px;
         text-align:justify;
     }
@@ -472,3 +477,9 @@ footer a{
         padding-left:10%;
     }
 }
+@media screen and (min-width:992px){
+    nav a{
+        display:inline-block !important;
+    }
+}
+
