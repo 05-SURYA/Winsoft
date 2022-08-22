@@ -54,15 +54,15 @@ class Courses{
     }
 }
 
-let course1 = new Courses("tally",25000);
-let course2 = new Courses("msOffice",20000);
-let course3 = new Courses("progLang",15000);
-let course4 = new Courses("adobe",18000);
+let course1 = new Courses("Tally",25000);
+let course2 = new Courses("MsOffice",20000);
+let course3 = new Courses("Programming",15000);
+let course4 = new Courses("Adobe",18000);
 
 const courses =[course1, course2, course3, course4];
 function getQuotes(){
-    let box = document.getElementsByTagName('form');
-    let child = box[0];
+    let box = document.getElementsByTagName('div');
+    let child = box[4];
     let select = document.getElementById("quotes").value;
     if(select == 0){
         alert("select the course to get quotes")
@@ -72,7 +72,7 @@ function getQuotes(){
         if(courses[i].name==select){
             let result = courses[i].fees;
             let newDoc = document.createElement("h2");
-            newDoc.innerHTML="Course fee : ₹" + result;
+            newDoc.innerHTML="Course fee for "+ courses[i].name + " : ₹ " + result;
             newDoc.style.textAlign="center";
             child.appendChild(newDoc);
             setTimeout(()=>{
