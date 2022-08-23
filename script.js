@@ -57,6 +57,9 @@ function getQuotes(){
         alert("select the course to get quotes")
         return;
     }
+    if(child.childNodes.length>13){
+        child.removeChild(child.childNodes[13]);
+    }
     for(let i=0; i<courses.length;i++){
         if(courses[i].name==select){
             let result = courses[i].fees;
@@ -65,8 +68,8 @@ function getQuotes(){
             newDoc.style.textAlign="center";
             child.appendChild(newDoc);
             setTimeout(()=>{
-                child.removeChild(child.childNodes[13]);
-            },8000);
+                child.childNodes[13].innerHTML=" ";
+            },5000);
         }
     } 
 }
