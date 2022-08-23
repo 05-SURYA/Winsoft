@@ -14,17 +14,6 @@ function reDo(element){
     child[3].style.display="none";
 }
 
-function displayChat(ele){
-    let element=ele.parentNode;
-    let child = element.childNodes;
-    let disp = window.getComputedStyle(child[2]).display;
-    console.log(disp);
-    if(disp=="none"){
-         child[2].style.display= "block";
-    }else{
-        child[2].style.display = "none";
-    }
-}
 
 function showNav(ele) {
     let element=ele.parentNode;
